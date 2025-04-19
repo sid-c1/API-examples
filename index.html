@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>API examples</title>
+		<meta name="description" content="API examples">
+	</head>
+
+	<body>
+
+		<table border="1">
+            <tr>
+                <th>API Name</th>
+                <th>API Description</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1. Weather station with most recent weather observation</td>
+                <td>
+					Enter ICAO code: <input type="text" id="txtICAO"><br>
+					This API returns the most recent weather observation for the specified ICAO code. The response includes information such as temperature, humidity and wind speed. <br>
+					Some examples of ICAO codes are: <br>
+					KJFK (John F. Kennedy International Airport),
+					EGLL (London Heathrow Airport),
+					OMDB (Dubai International Airport),
+					RJTT (Tokyo Haneda Airport).
+
+
+				</td>
+                <td><button id="btnICAO">Submit</button></td>
+            </tr>
+            <tr>
+                <td>2. Country/reverse geocoding</td>
+                <td>Enter longitude: <input type="text" id="txtLong"> <br>
+					Enter latitude: <input type="text" id="txtLat"> <br>
+					This API returns the country based on the given longitude and latitude. <br>
+				</td>
+                <td><button id="btnCountry">Submit</button></td>
+            </tr>
+            <tr>
+                <td>3. Timezone</td>
+                <td>Enter longitude: <input type="text" id="txtTimeLong"> <br>
+					Enter latitude: <input type="text" id="txtTimeLat"> <br>
+					This API returns the timezone based on the given longitude and latitude. <br>
+				</td>
+                <td><button id="btnTimezone">Submit</button></td>
+            </tr>
+        </table>
+<br><br>
+		<table border="1">
+			<tr>
+				<th>API 1 output:</th>
+            </tr>
+			<tr>
+				<td>Name:</td>
+				<td id="txtName"></td>
+			</tr>
+			<tr>
+				<td>Country code:</td>
+				<td id="txtCountry"></td>
+			</tr>
+			<tr>
+				<td>Temperature:</td>
+				<td id="txtTemperature"></td>
+			</tr>
+			<tr>
+				<td>Wind speed:</td>
+				<td id="txtWind"></td>
+			</tr>
+			<tr>
+				<td>Humidity:</td>
+				<td id="txtHumidity"></td>
+			</tr>
+			<tr>
+				<td>Visibility:</td>
+				<td id="txtVisibility"></td>
+			</tr>
+        </table>
+
+		<table border="1">
+			<tr>
+				<th>API 2 output:</th>
+            </tr>
+			<tr>
+				<td>Country:</td>
+				<td id="txtCountryName"></td>
+			</tr>
+			<tr>
+				<td>Country code:</td>
+				<td id="txtCountryCode"></td>
+			</tr>
+			<tr>
+				<td>Distance:</td>
+				<td id="txtDistance"></td>
+			</tr>
+        </table>
+
+		<table border="1">
+			<tr>
+				<th>API 3 output:</th>
+            </tr>
+			<tr>
+				<td>Country:</td>
+				<td id="txtTimeCountry"></td>
+			</tr>
+			<tr>
+				<td>GMT offset:</td>
+				<td id="txtGMTOffset"></td>
+			</tr>
+			<tr>
+				<td>Sunrise:</td>
+				<td id="txtSunrise"></td>
+			</tr>
+			<tr>
+				<td>Sunset:</td>
+				<td id="txtSunset"></td>
+			</tr>
+        </table>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
